@@ -10,7 +10,8 @@ implicit none
 !function definition
 public :: &
   trans_binary, &
-  trans_logical
+  trans_logical, &
+  check_circuit
 
 !function realization
 contains
@@ -77,22 +78,22 @@ contains
     implicit none
   
     !interface definition
-    interface
-      function trans_binary(num)
-        use data_type
-        implicit none
-        integer(int_kind) :: &
-        num,  &
-        trans_binary(16)
-      end function
-  
-      function trans_logical(array)
-        use data_type
-        implicit none
-        integer(int_kind) :: array(16)
-        logical :: trans_logical(16)
-      end function
-    end interface
+!    interface
+!      function trans_binary(num)
+!        use data_type
+!        implicit none
+!        integer(int_kind) :: &
+!        num,  &
+!        trans_binary(16)
+!      end function
+!  
+!      function trans_logical(array)
+!        use data_type
+!        implicit none
+!        integer(int_kind) :: array(16)
+!        logical :: trans_logical(16)
+!      end function
+!    end interface
   
     !pass & return variable definition
     

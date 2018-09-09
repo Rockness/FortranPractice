@@ -15,4 +15,5 @@ program main
 
   call finalize
 
+  stop
 end
